@@ -1,6 +1,7 @@
-# Nama dan NIM kelompok2
+# KNODUA (Kelompok nomor dua)
 Repository tugas untuk kelompok 2
 
+Nama dan Nim
 Anita Meliyanti        : 2110018
 Hayatun Nufus          : 2110204
 Humaidi Fikri          : 2110220
