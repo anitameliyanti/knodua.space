@@ -1,4 +1,4 @@
-# KNODUA (Kelompok nomor dua)
+  KNODUA (Kelompok nomor dua)
 Repository tugas untuk kelompok 2
 
 Nama dan Nim
