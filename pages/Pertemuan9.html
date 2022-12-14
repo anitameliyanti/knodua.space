@@ -68,7 +68,132 @@
                 <!-- Pengisian Resume-->
                 <div class="row">
                     <div class="col-lg-12 ms-auto"><p class="lead" text-align="justify">
-                        Teori Bilangan Bulat                    
+                        <b>Teori Bilangan Bulat</b>
+                        <br><br>
+                        <b>Ciri Dasar</b>
+                        <br><br>
+                        Bilangan Bulat : 8,21,8765,-34,0 <br>
+                        Bilangan Desimal : 8.0,34.25,0.02.<br>
+                        <br>
+                        Misalkan a dan b bilangan bulat, a  0. a habis membagi b (a divides b) jika terdapat bilangan bulat c <br>
+                        sedemikian sehingga b = ac.<br> 
+                        Notasi: a | b jika b = ac, c  Z dan a  0. <br> 
+                        Contoh 1: 4 | 12 karena 12/4 = 3 (bilangan bulat) atau 12 = 4  3.<br> 
+                        Tetapi 4 | 13 karena 13/4 = 3.25 (bukan bilangan bulat).
+                        <br><br>
+                        <b>Teorema 1 (Teorema Eucliden)</b>
+                        <br><br>
+                        Misalkan m dan n bilangan bulat, n > 0. Jika m dibagi dengan n maka terdapat bilangan bulat unik q (quotient) dan r<br>
+                        (remainder), sedemikian sehingga<br>
+                         m = nq + r (1)<br>
+                        dengan 0  r < n.<br>
+                        <br>
+                        <b>Contoh</b>
+                        <br><br>
+                        (i) 1987/97 = 20, sisa 47: <br>
+                                1987 = 97  20 + 47<br>
+                        (ii) -22/3 = -8, sisa 2:<br>
+                                -22 = 3(-8) + 2<br>
+                        tetapi -22 = 3(-7) - 1 salah karena r = -1 (syarat 0  r < n)<br>
+                        <br><br>
+                        <b>Pembagian Bersama Terbesar (PBB)</b>
+                        <br><br>
+                        1. Misalkan a dan b bilangan bulat tidak nol.<br>
+                        2. Pembagi bersama terbesar (PBB - greatest common divisor atau gcd) dari a dan b adalah bilangan bulat <br>
+                        terbesar d sedemikian hingga d | a dan d | b. <br>
+                        3. Dalam hal ini kita nyatakan bahwa PBB(a, b) = d. <br>
+                        <b>Contoh</b>
+                        <br><br>
+                        Faktor pembagi 45: 1, 3, 5, 9, 15, 45;<br> 
+                        Faktor pembagi 36: 1, 2, 3, 4, 9, 12, 18, 36;<br>
+                        Faktor pembagi bersama 45 dan 36: 1, 3, 9<br>
+                        => PBB(45, 36) = 9.<br>
+                        <br><br>
+                        <b>Teorema 2</b>
+                        <br><br>
+                        Misalkan m dan n bilangan bulat, dengan syarat n > 0 sedemikian sehingga<br>
+                        m = nq + r , 0  r < n<br>
+                        maka PBB(m, n) = PBB(n, r)<br>
+                        <br>
+                        Contoh 4: m = 60, n = 18,<br>
+                        60 = 18  3 + 6<br>
+                        maka PBB(60, 18) = PBB(18, 6) = 6<br>
+                        <br>
+                        <b>Algoritma Euclidean</b>
+                        <br><br>
+                        Diberikan dua buah bilangan bulat tak-negatif m dan n (m  n).<br>
+                        Algoritma Euclidean berikut mencari pembagi bersama terbesar dari m dan n. <br>
+                        <br>
+                        <b>Algoritma Euclidean</b>
+                        1. Jika n = 0 maka <br>
+                        m adalah PBB(m, n); <br>
+                        stop.<br>
+                        tetapi jika n  0,<br> 
+                        lanjutkan ke langkah 2.<br>
+                        2. Bagilah m dengan n dan misalkan r adalah sisanya. <br>
+                        3.  Ganti nilai m dengan nilai n dan nilai n dengan nilai r, lalu ulang kembali ke langkah 1.<br>
+                        <br>
+                        <b>Kombinasi Lanjar</b>
+                        <br><br>
+                        PBB(a,b) dapat dinyatakan sebagai kombinasi lanjar (linear combination) a dan b dengan dengan koefisien-koefisennya.<br>
+                        Contoh 6: PBB(80, 12) = 4 ,<br>
+                                    4 = (-1)  80 + 7  12.<br>
+                        Teorema 3. Misalkan a dan b bilangan bulat positif, maka terdapat bilangan bulat m dan n sedemikian sehingga PBB(a, b) = ma + nb.<br>
+                        <br>
+                        Contoh :<br>
+                        Nyatakan PBB(21, 45) sebagai kombinasi lanjar dari 21 dan 45. <br>
+                        Solusi:<br>
+                        45 = 2 (21) + 3<br>
+                        21 = 7 (3) + 0<br>
+                        Sisa pembagian terakhir sebelum 0 adalah 3, maka PBB(45, 21) = 3<br>
+                        Substitusi dengan persamaan-persamaan di atas menghasilkan:<br>
+                        3 = 45 - 2 (21)<br>
+                        yang merupakan kombinasi lanjar dari 45 dan 21<br>
+                        <br><br>
+                        <b>Aritmatika Modulo</b>
+                        <br><br>
+                        Misalkan a dan m bilangan bulat (m > 0). Operasi a mod m (dibaca “a modulo m”) <br>
+                        memberikan sisa jika a dibagi dengan m. Notasi: a mod m = r sedemikian sehingga<br>
+                        a = mq + r, dengan 0  r < m.<br>
+                        m disebut modulus atau modulo, dan hasil aritmetika modulo m terletak di dalam himpunan {0, 1, 2, …, m - 1}. <br>
+                        <br><br>
+                        <b>Kongruen</b>
+                        <br><br>
+                        Misalnya 38 mod 5 = 3 dan 13 mod 5 = 3, maka dikatakan 38  13 (mod 5) <br>
+                        (baca: 38 kongruen dengan 13 dalam modulo 5). <br>
+                        Misalkan a dan b bilangan bulat dan m adalah bilangan > 0,<br> 
+                        maka a  b (mod m) jika m habis membagi a - b.<br>
+                        Jika a tidak kongruen dengan b dalam modulus m, maka ditulis a / b (mod m) .<br>
+                        <br><br>
+                        <b>Teorema 4</b>
+                        <br><br>
+                        Misalkan m adalah bilangan bulat positif.<br>
+                        1)Jika a  b (mod m) dan c adalah sembarang bilangan bulat maka<br>
+                        (i) (a + c)  (b + c) (mod m)<br>
+                        (ii) ac  bc (mod m)<br>
+                        (iii) a p  b p (mod m) , p bilangan bulat tak-negatif<br>
+                        2) Jika a  b (mod m) dan c  d (mod m), maka<br>
+                        (i) (a + c)  (b + d) (mod m)<br>
+                        (ii) ac  bd (mod m)<br>
+                        Bukti (hanya untuk 1(ii) dan 2(i) saja):<br> 
+                        1(ii) a  b (mod m) berarti: <br>
+                                 a = b + km <br>
+                                 a - b = km<br>
+                                 (a - b)c = ckm<br> 
+                                 ac = bc + Km <br>
+                                 ac  bc (mod m) <br>
+                        <br><br>
+                        2(i) a  b (mod m)  a = b + k1m<br>
+                            c  d (mod m)  c = d + k2m + <br>
+                                         (a + c) = (b + d) + (k1 + k2)m<br>
+                                         (a + c) = (b + d) + km ( k = k1 + k2)<br> 
+                                         (a + c) = = (b + d) (mod m)<br>
+                        <br><br>
+                        <b>Balikan Modulo (modulo invers)</b>
+                        <br><br>
+                        Di dalam aritmetika bilangan riil, inversi (inverse) dari perkalian adalah pembagian. <br>
+                        Contoh: Inversi 4 adalah 1/4, sebab 4  1/4 = 1. <br>
+                        Di dalam aritmetika modulo, masalah menghitung inversi modulo lebih sukar. <br>             
                     </div>
                 </div>
                  <!-- Akhir Resume-->
